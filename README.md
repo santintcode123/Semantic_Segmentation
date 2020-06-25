@@ -9,7 +9,7 @@ https://drive.google.com/file/d/1sN7BPHJP0zNEjxwxDOwZQE_Y0hpmDpCx/view?usp=shari
 
 all the folder contains python code of their respective model and model.h5,we just included only final architecure in tflite format since it's our delivered model for semantic segmentation.
 
-edgemap detection and compressing contains python code for data preprocessing and converting image into numpy array.
+'edgemap detection and compressing' contains python code for data preprocessing and converting image into numpy array.
 
 
 
