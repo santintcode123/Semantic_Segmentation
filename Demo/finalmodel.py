@@ -105,10 +105,9 @@ while (True):
   img = resize( frame , (128, 128), mode='constant', preserve_range=True )
   img = tf.cast( img, dtype=np.uint8 )
   img = tf.reshape( img, (1, 128, 128, 3) )
-#  plt.imshow( img[0] )
+
 
   yhat = model2.predict( img )
-  #yhat_t = (yhat > 0.5).astype( np.uint8 )
   yhat = gray2rgb( yhat )  # Comment this line for Gray Scale Image
   disp = np.squeeze( yhat[0] )
   cv2.imshow( 'disp', disp )
