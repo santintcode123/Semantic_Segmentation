@@ -22,11 +22,26 @@ The goal is to easily be able to implement, train, and test new Semantic Segment
 - The tflite file attached can be used with Android Studio to build android apps based on semantic segmentation.
 - Models can be trained using other data such as COCO dataset and PASCAL VOC datasets.
 
+# Preprocessed CIHP DATA
+Preprocessed data is stored in .npz form
+
+- Link - https://drive.google.com/file/d/1-qRSDqxYGXJ6-8x5sAsNr6ZFii4_VfMr/view?usp=sharing
+
+- The following Numpy Arrays can be accesed using
+- dict_data=load('/path to .npz/')
+
+1. X_train = dict_data['arr_0']
+2. Y_train = dict_data['arr_1']
+3. edgemap = dict_data['arr_2']
+4. X_val = dict_data['arr_3']
+5. Y_val = dict_data['arr_4']
+6. X_test = dict_data['arr_5']
+
 # Directories
 Each folder corresponds to a different Segmentation model, except the Edge NEt and the EdgeNEt_without_RELU folders which are used to design custom loss fns for our segmentation networks.
 The path is as follows 
 - Segmentation model -->>>>>  'model'.h5 - For Model
-- Traing Network     -->>>>>  'model'.py - For Training Network
+- Training Network     -->>>>>  'model'.py - For Training Network
 
 # How to Use
 - CIHP data is preprocessed for semantic segmentation and stored in .npz file.
@@ -37,7 +52,6 @@ The path is as follows
 - Change the path of data.npz
 - Change the path of the models to the required path in finalmodel.py 
 - Run the code and get the segmented masks of a live feed using your webcam or any other device.
-
 
 
 
