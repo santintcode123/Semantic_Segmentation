@@ -11,15 +11,22 @@ The goal is to easily be able to implement, train, and test new Semantic Segment
 5. Plotting of loss function and accuracy over epochs using tensorboard callback
 
 # Prerequisites
--Python
--Keras 
--Opencv for python
--Tensorflow 
--Numpy
+- Python
+- Keras 
+- Opencv for python
+- Tensorflow 
+- Numpy
+- Skimage
 
 # Where it can be used
 - The tflite file attached can be used with Android Studio to build android apps based on semantic segmentation.
 - Models can be trained using other data such as COCO dataset and PASCAL VOC datasets.
+
+# Directories
+Each folder corresponds to a different Segmentation model, except the Edge NEt and the EdgeNEt_without_RELU folders which are used to design custom loss fns for our segmentation networks.
+The path is as follows 
+- Segmentation model -->>>>>  'model'.h5 - For Model
+- Traing Network     -->>>>>  'model'.py - For Training Network
 
 # How to Use
 - CIHP data is preprocessed for semantic segmentation and stored in .npz file.
@@ -36,9 +43,9 @@ The goal is to easily be able to implement, train, and test new Semantic Segment
 
 
 
-# Contributors
-B Sai Akshay
-Santosh Kumar Meena
+## Contributors
+- B Sai Akshay
+- Santosh Kumar Meena
 
 
 
